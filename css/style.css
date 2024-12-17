@@ -2,6 +2,16 @@
 @import url('./vars.css');
 
 
+/* display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   flex-basis: 100xp
+   flex-wrap
+   flex-grow
+   order*/
+
 * {
     box-sizing: border-box;
 }
@@ -12,12 +22,15 @@ body {
     min-height: 100vh;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
     background: linear-gradient(#ffddff,#00ccdd);
 }
 .flex-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -27,4 +40,34 @@ body {
 
 .logo img {
     width: 100%;
+}
+.menu {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 28px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--title-font-color);
+}
+.flex-container_col {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+.width_half {
+    border: 1px solid #000;
+    /* flex-grow: 1; */
+    width: 200px;
+}
+ .width_full {
+    border: 1px solid #000;
+    flex-grow: 1;
+    order: -1;
+    max-width: 600px;
 }
