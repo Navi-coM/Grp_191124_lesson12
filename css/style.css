@@ -1,0 +1,30 @@
+@import url('./normalize.css');
+@import url('./vars.css');
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--main-font-size);
+    color: var(--text-font-color);
+    min-height: 100vh;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    background: linear-gradient(#ffddff,#00ccdd);
+}
+.flex-container {
+    display: flex;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100%;
+}
